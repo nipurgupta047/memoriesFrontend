@@ -1,0 +1,253 @@
+
+body {
+    background: url(https://res.cloudinary.com/dh4oazlni/image/upload/v1687374444/pawel-czerwinski-vI5XwPbGvmY-unsplash_fmwelx.jpg);
+    /* background: url(https://res.cloudinary.com/dh4oazlni/image/upload/v1687355693/image7_efeo6m.jpg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#logoutButton{
+    margin-left: 6rem;
+}
+
+#homePageOuterContainer{
+    background: url(https://res.cloudinary.com/dh4oazlni/image/upload/v1687374444/pawel-czerwinski-vI5XwPbGvmY-unsplash_fmwelx.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* height: 100vh; */
+    background-attachment: fixed;
+}
+
+#topBar{
+    position: fixed;
+    width: 100%;
+}
+
+#logoContainer{
+    padding-top: 4rem;
+    display: flex;
+}
+
+#logoId{
+    width: 30rem;
+    margin-left: 25%;
+}
+
+#buttons{
+    float: right;
+    margin-top: 5rem;
+    margin-right: 0.5rem;
+}
+
+.signUpContainer{
+    margin-top: 4rem;
+}
+
+.loginButton{
+    margin-bottom: 0.5rem;
+    width: 17rem;
+    border-radius: 0rem;
+    color: azure;
+    background-color: rgb(0, 117, 12);
+    
+}
+.loginButton:hover{
+    color: black;
+    background-color: rgb(172, 238, 237);
+}
+
+.signupButton{
+    width: 17rem;
+    margin-bottom: 0.5rem;
+    border-radius: 0rem;
+    color: azure;
+    background-color: rgb(31, 29, 29);
+}
+.signupButton:hover{
+    background-color: white;
+}
+
+.postsButton{
+    width: 17rem;
+    border-radius: 0rem;
+    color: azure;
+    background-color: rgb(119, 23, 23);
+}
+.postsButton:hover{
+    background-color: rgba(141, 35, 35, 0.779);
+    color: white;
+    transform: scale(1.02);
+    transition-duration: 0.5s;
+}
+
+.topTextContainer{
+    margin-top: 16rem;
+}
+
+.textContainer{
+    float: right;
+    width: 100%;    
+}
+
+.homePageText{
+    text-align: center;
+    float: right;
+    background-color: #2a4356;
+    width: 40%;
+    height: auto;
+    margin: 0.2rem;
+    padding-top: 0.8rem;
+    border-radius: 1rem;
+    border-top-left-radius: 3rem;
+    border-bottom-left-radius: 3rem;    
+    border: solid;
+    border-width: 0.2rem;
+    border-color:#4482da;
+    font-size:1.2rem;
+    font-family: Times New Roman;
+    color: white;
+}
+
+.icon:hover{
+    transform: scale(1.2);
+}
+
+#navbar{
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: #4482da!important;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 1rem;
+    padding-top: 1rem; 
+    
+}
+
+#uploadBarMemory{
+    width: 25%;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+    text-align: center;
+    color: white;
+    margin-left: 37%;
+    margin-top: 15%;
+    border-width: 0.05rem;
+    border-radius: 0.3rem;
+    box-shadow: #8080802b;
+    position: fixed;
+    visibility: hidden;
+    background-color: #20ac0d;
+    /* z-index: 2; */
+}
+
+#editBarMemory{
+    width: 80%;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+    text-align: center;
+    color: white;
+    margin: auto;
+    margin-top: 0%;
+    border-width: 0.05rem;
+    border-radius: 0.3rem;
+    box-shadow: #8080802b;
+    visibility: hidden;
+    background-color: #20ac0d;
+}
+
+#add_new_memory_container{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #8080802b;
+    padding-left: 3%;
+    padding-right: 3%;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+    border-radius: 1rem;
+    visibility: visible;
+}
+
+#memory_card_body{
+    border-color: #c1d7ec;
+    border-radius: 0.8rem;
+}
+#memory_card_body:hover{
+    transform: scale(1.06);
+    transition: all .2s ease-in-out;
+}
+
+#memory_card_image{
+    border-top-left-radius: 0.8rem;
+    border-top-right-radius: 0.8rem;
+}
+
+#memory_card_date{
+    border-bottom-left-radius: 0.8rem;
+    border-bottom-right-radius: 0.8rem;
+}
+
+#change_memory_container{
+    width: 30%;
+    margin-left: 35%;
+    background-color: #e7e7e7;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    border-radius: 0.7rem;
+    border: solid;
+    border-width: 0.01rem;
+    position: fixed;
+    z-index: 1;
+    visibility: hidden;
+}
+
+#postsDisplayId{
+    float: left;
+    width: 50%;
+    padding-left: 15%;
+}
+
+#addNewPostBoxId{
+    float: right;
+    width: 50%;
+    position: fixed;
+    margin-left: 50%;
+}
+
+#uploadBarPost{
+    width: 25%;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+    text-align: center;
+    color: white;
+    /* margin-left: 37%; */
+    margin-top: 8%;
+    border-width: 0.05rem;
+    border-radius: 0.3rem;
+    box-shadow: #8080802b;
+    position: fixed;
+    visibility: hidden;
+    background-color: #20ac0d;
+    /* z-index: 2; */
+}
+
+#add_new_post_container{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #8080802b;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border-radius: 0.7rem;
+    visibility: visible;
+}
+
+
