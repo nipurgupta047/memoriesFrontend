@@ -13,7 +13,7 @@ export default function MemoriesHomeBody({memories, setMemories, originalMemorie
   useEffect(() =>{
 
     const getMemories = async() =>{
-      const PersonalMemoriesUrl = 'http://localhost:9000/memories';
+      const PersonalMemoriesUrl = 'https://memoriesbackend-2bak.onrender.com/memories';
       // console.log(PersonalMemoriesUrl)
  
       try {
