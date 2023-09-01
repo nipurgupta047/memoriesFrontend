@@ -65,10 +65,11 @@ export default function NavBar({ memories, setMemories, originalMemories }) {
   useEffect(() => {
 
     const getUsername = async() =>{
-      const url = 'http://memoriesbackend-2bak.onrender.com/getUsername';
+      const url = 'https://memoriesbackend-2bak.onrender.com/getUsername';
 
       try{
         const res = await axios.post(url, {'token':localStorage.getItem('token')});
+        // console.log('res',res)
         if(res.data.un === ''){
           return;
         }
@@ -81,7 +82,7 @@ export default function NavBar({ memories, setMemories, originalMemories }) {
     getUsername();
 
   }, []) 
-  console.log('d',username)
+  // console.log('d',username)
   return (
     <div id="home_page_upper_body">
       <nav

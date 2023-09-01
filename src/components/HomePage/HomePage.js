@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { NavLink, redirect } from 'react-router-dom'
 
 export default function HomePage() {
+
   return (
     <div id='homePageOuterContainer'>
         <div id='topBar'>
