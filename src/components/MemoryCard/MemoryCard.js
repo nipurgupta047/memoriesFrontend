@@ -41,8 +41,8 @@ export default function MemoryCard({setEditMemoryObjectId, objectId, imageUrl, d
                 </div>
                 <div className="card-footer" id='memory_card_date'>
                     <small className="text-body-secondary">{date}</small>
-                    <img className='icon' src='images/delete.svg'alt='delete' onClick={deleteMemory} style={{'height':'18px', 'width':'18px','float':'right', 'marginRight':'5px'}}></img> 
-                    <img className='icon' src='images/edit.svg' alt='edit' onClick={()=>editMemory(objectId)} style={{'height':'18px', 'width':'18px', 'float':'right','marginRight':'10px'}}></img>  
+                    <img className='icon' src='https://res.cloudinary.com/dh4oazlni/image/upload/v1687390662/delete_vmakrz.svg'alt='delete' onClick={deleteMemory} style={{'height':'18px', 'width':'18px','float':'right', 'marginRight':'5px'}}></img> 
+                    <img className='icon' src='https://res.cloudinary.com/dh4oazlni/image/upload/v1687390662/edit_biwkru.svg' alt='edit' onClick={()=>editMemory(objectId)} style={{'height':'18px', 'width':'18px', 'float':'right','marginRight':'10px'}}></img>  
                 </div>
         </div>
     </div>

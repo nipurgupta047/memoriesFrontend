@@ -27,7 +27,6 @@ export default function Posts() {
     getPosts();
   }, []) 
 
-  console.log('op',posts)
 
   return (
     <div>

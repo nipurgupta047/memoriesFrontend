@@ -1,6 +1,7 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "../../styles.css";
 import { NavLink } from "react-router-dom";
+import axios from 'axios'
 
 
 function SearchInMemories(memories, setMemories) {
@@ -52,14 +53,35 @@ function searchValueChanged(memories, setMemories, originalMemories) {
 export default function NavBar({ memories, setMemories, originalMemories }) {
 
   const logOut = () =>{
-  
+    setUsername('')
     localStorage.setItem('token', '')
     alert('Succesfully Logged Out')
     window.location.href='/'
   
   }
   
+  const [username, setUsername] = useState('');
 
+  useEffect(() => {
+
+    const getUsername = async() =>{
+      const url = 'http://memoriesbackend-2bak.onrender.com/getUsername';
+
+      try{
+        const res = await axios.post(url, {'token':localStorage.getItem('token')});
+        if(res.data.un === ''){
+          return;
+        }
+        setUsername(res.data.un)
+      }catch (error) {
+        console.log(error)
+        
+      }
+    }
+    getUsername();
+
+  }, []) 
+  console.log('d',username)
   return (
     <div id="home_page_upper_body">
       <nav
@@ -115,14 +137,17 @@ export default function NavBar({ memories, setMemories, originalMemories }) {
               </button>
 
             </form>
-            <button
-                className="btn btn-danger btn-sm"
-                id='logoutButton'
-                type="button"
-                onClick={logOut}
-              >
-                Log Out
+            {username!==''  &&
+              <button
+                  className="btn btn-danger btn-sm"
+                  id='logoutButton'
+                  type="button"
+                  onClick={logOut}
+                >
+                  Log Out
               </button>
+            }
+
           </div>
        
       </nav>
